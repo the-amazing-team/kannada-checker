@@ -72,7 +72,7 @@ class KannadaChecker:
         )
         cv2.putText(
             image,
-            "Progress : " + str(round(percentage, 2)) + "%",
+            "Percent (KN) : " + str(round(percentage, 2)) + "%",
             (10, 30),
             cv2.FONT_HERSHEY_SIMPLEX,
             1,
