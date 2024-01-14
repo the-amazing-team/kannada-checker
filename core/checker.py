@@ -2,6 +2,7 @@ import cv2
 import easyocr
 from translate import Translator
 from langdetect import detect
+from pprint import pprint
 
 
 class KannadaChecker:
@@ -24,10 +25,10 @@ class KannadaChecker:
             return detect(text)
 
     def _draw_box(self, image, rect, text, confidence, language, is_translated=False):
-        p1 = rect[0]
-        p2 = rect[2]
-        height = p2[1] - p1[1]
-        width = p2[0] - p1[0]
+        p1 = [int(coord) for coord in rect[0]]
+        p2 = [int(coord) for coord in rect[2]]
+        # height = p2[1] - p1[1]
+        # width = p2[0] - p1[0]
 
         if is_translated:
             text = text + " (Translated)"
