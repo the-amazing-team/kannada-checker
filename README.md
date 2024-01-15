@@ -93,8 +93,6 @@ The text extraction is done using the EasyOCR library. The library is used to ex
 
 Consider there is a sample image `sample.png` in the `dataset` folder. The following code can be used to extract text from the image:
 
-<!-- TODO: Add input and output image -->
-
 ```python
 import cv2
 import easyocr
@@ -102,6 +100,22 @@ import easyocr
 image = cv2.imread('sample.png')
 reader = easyocr.Reader(['en', 'kn'])
 result = reader.readtext(image)
+
+print(result)
+```
+
+##### Input Image
+
+![sample-image](images/sample-image.png)
+
+##### Output
+
+```bash
+[
+    ([[168, 26], [732, 26], [732, 346], [168, 346]], "ಕನ್ನಡ", 0.9976149112476682),
+    ([[139, 353], [425, 353], [425, 397], [139, 397]], "KANNADA", 0.4158211641361065),
+    ([[448, 350], [762, 350], [762, 398], [448, 398]], "LAN GUAGE", 0.8482427654646876),
+]
 ```
 
 #### Language Detection
