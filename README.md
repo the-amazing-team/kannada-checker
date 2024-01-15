@@ -69,6 +69,55 @@ langdetect is a python package that allows one to detect the language of a text.
 
 ### Approach
 
+Currently the project is divided into 3 parts:
+
+1. Text Extraction
+2. Language Detection
+3. Percentage Calculation
+
+#### Text Extraction
+
+The text extraction is done using the EasyOCR library. The library is used to extract text from the images. All the text is extracted and stored in a list.
+
+Consider there is a sample image `sample.png` in the `dataset` folder. The following code can be used to extract text from the image:
+
+<!-- TODO: Add input and output image -->
+
+```python
+import cv2
+import easyocr
+
+image = cv2.imread('sample.png')
+reader = easyocr.Reader(['en', 'kn'])
+result = reader.readtext(image)
+```
+
+#### Language Detection
+
+The language detection is done using the langdetect library. The library is used to detect the language of the text extracted from the images. The language of each text is stored in a list.
+
+```python
+import langdetect
+
+sample_text = 'ಕನ್ನಡ ಪಠ್ಯ'
+result = langdetect.detect(sample_text)
+print(result)
+```
+
+```bash
+OUTPUT : kn
+```
+
+#### Percentage Calculation
+
+The percentage calculation is done using the following formula:
+
+```bash
+Percentage of Kannada Text = (Number of Kannada Text / Total Number of Text) * 100
+```
+
+Once the percentage is calculated, the image is annotated with the percentage and saved in the `annotated` folder.
+
 ## Results, Dicussion & Future Work
 
 ### Results
