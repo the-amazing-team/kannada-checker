@@ -1,5 +1,22 @@
 # Kannada Checker
 
+## Table of Contents
+
+- [Problem Statement and Motivation](#problem-statement-and-motivation)
+- [Installation](#installation)
+- [Approach / Workflow](#approach--workflow)
+  - [Dataset](#dataset)
+  - [Dependencies](#dependencies)
+    - [OpenCV](#opencv)
+    - [EasyOCR](#easyocr)
+    - [Translate](#translate)
+    - [TQDM](#tqdm)
+    - [langdetect](#langdetect)
+  - [Approach](#approach)
+    - [Text Extraction](#text-extraction)
+    - [Language Detection](#language-detection)
+    - [Percentage Calculation](#percentage-calculation)
+
 ## Problem Statement and Motivation
 
 Our project aims to address the challenge of determining and fulfil the extent of local or regional language usage on name boards of businesses and startups. By leveraging image processing techniques coupled with text extraction tools like EasyOCR and language detection libraries, the project seeks to calculate the percentage of local language content on these boards. This analysis serves to understand and encourage the use of regional languages in business representations, promoting inclusivity and cultural significance within communities .
