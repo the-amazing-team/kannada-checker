@@ -135,3 +135,15 @@ Once the percentage is calculated, the image is annotated with the percentage an
 ### Results
 
 ### Future Plans
+
+#### Google Maps Integration
+
+![Google Maps](images/360-images.png)
+
+We are planning to integrate with google maps 360 view to get the images of the shops and then run our algorithm on the images to get the percentage of Kannada text on the boards in those areas.
+
+#### Heatmap
+
+![Heatmap](images/heatmap.png)
+
+Based on the information that are generated from google maps integration, we are planning to create a heatmap of the areas where the percentage of Kannada text is high and low. This will help us to understand the areas where the Kannada text is used more and less.
