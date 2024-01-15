@@ -150,7 +150,11 @@ Once the percentage is calculated, the image is annotated with the percentage an
 
 The results of the project are as follows:
 
-| Input                                      | Output                                       |
+| Single Input                             | Single Output                                    |
+| ---------------------------------------- | ------------------------------------------------ |
+| ![single-input](images/sample-image.png) | ![single-output](images/sample-image-output.png) |
+
+| Input (Bulk)                               | Output (Bulk)                                |
 | ------------------------------------------ | -------------------------------------------- |
 | ![collage-input](images/collage-input.png) | ![collage-output](images/collage-output.png) |
 
