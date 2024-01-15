@@ -26,7 +26,31 @@ You will find the results in the `annotated` folder.
 
 ### Dataset
 
+The dataset consists of 52 images collected randomly from Google Images. It has been ensured that the images are of high quality and are not blurred. Various images of all amount of text in both and Kannada and English have been included.
+
+You can find the dataset in the `dataset` folder.
+
 ### Dependencies
+
+#### OpenCV
+
+OpenCV is a library of programming functions mainly aimed at real-time computer vision. Originally developed by Intel, it was later supported by Willow Garage then Itseez. The library is cross-platform and free for use under the open-source Apache 2 License. OpenCV supports the deep learning frameworks TensorFlow, Torch/PyTorch and Caffe.
+
+#### EasyOCR
+
+EasyOCR is a python package that allows one to extract text from images and PDFs. It is a re-implementation of the popular C++ package, Tesseract, and is a part of the EasyOCR family of packages. EasyOCR is a single-function package that is easy to use and can be used to extract text from images and PDFs.
+
+#### Translate
+
+Translate is a python package that allows one to translate text from one language to another. It is a part of the EasyOCR family of packages. Translate is a single-function package that is easy to use and can be used to translate text from one language to another.
+
+#### TQDM
+
+TQDM is a progress bar library with good support for nested loops and Jupyter/IPython notebooks.
+
+#### langdetect
+
+langdetect is a python package that allows one to detect the language of a text. It is a part of the EasyOCR family of packages. langdetect is a single-function package that is easy to use and can be used to detect the language of a text.
 
 ### Approach
 
