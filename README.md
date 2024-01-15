@@ -36,36 +36,31 @@ You can find the dataset in the `dataset` folder.
 
 OpenCV is a library of programming functions mainly aimed at real-time computer vision. Originally developed by Intel, it was later supported by Willow Garage then Itseez. The library is cross-platform and free for use under the open-source Apache 2 License. OpenCV supports the deep learning frameworks TensorFlow, Torch/PyTorch and Caffe.
 
-**Documentation** <br />
-[https://docs.opencv.org/3.4/d6/d00/tutorial_py_root.html](https://docs.opencv.org/3.4/d6/d00/tutorial_py_root.html)
+##### [https://docs.opencv.org/3.4/d6/d00/tutorial_py_root.html](https://docs.opencv.org/3.4/d6/d00/tutorial_py_root.html)
 
 #### EasyOCR
 
 EasyOCR is a python package that allows one to extract text from images and PDFs. It is a re-implementation of the popular C++ package, Tesseract, and is a part of the EasyOCR family of packages. EasyOCR is a single-function package that is easy to use and can be used to extract text from images and PDFs.
 
-**Documentation** <br />
-[https://github.com/JaidedAI/EasyOCR](https://github.com/JaidedAI/EasyOCR)
+##### [https://github.com/JaidedAI/EasyOCR](https://github.com/JaidedAI/EasyOCR)
 
 #### Translate
 
 Translate is a python package that allows one to translate text from one language to another. It is a part of the EasyOCR family of packages. Translate is a single-function package that is easy to use and can be used to translate text from one language to another.
 
-**Documentation** <br />
-[https://github.com/terryyin/translate-python](https://github.com/terryyin/translate-python)
+##### [https://github.com/terryyin/translate-python](https://github.com/terryyin/translate-python)
 
 #### TQDM
 
 TQDM is a progress bar library with good support for nested loops and Jupyter/IPython notebooks.
 
-**Documentation** <br />
-[https://github.com/tqdm/tqdm](https://github.com/tqdm/tqdm)
+##### [https://github.com/tqdm/tqdm](https://github.com/tqdm/tqdm)
 
 #### langdetect
 
 langdetect is a python package that allows one to detect the language of a text. It is a part of the EasyOCR family of packages. langdetect is a single-function package that is easy to use and can be used to detect the language of a text.
 
-**Documentation** <br />
-[https://github.com/Mimino666/langdetect](https://github.com/Mimino666/langdetect)
+##### [https://github.com/Mimino666/langdetect](https://github.com/Mimino666/langdetect)
 
 ### Approach
 
