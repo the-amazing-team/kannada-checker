@@ -134,6 +134,12 @@ Once the percentage is calculated, the image is annotated with the percentage an
 
 ### Results
 
+The results of the project are as follows:
+
+| Input                                      | Output                                       |
+| ------------------------------------------ | -------------------------------------------- |
+| ![collage-input](images/collage-input.png) | ![collage-output](images/collage-output.png) |
+
 ### Future Plans
 
 #### Google Maps Integration
