@@ -86,12 +86,21 @@ class KannadaChecker:
         results = self.reader.readtext(image)
         return results
 
+    def calc_rect_area(self, rect):
+        p1 = [int(coord) for coord in rect[0]]
+        p2 = [int(coord) for coord in rect[2]]
+        height = p2[1] - p1[1]
+        width = p2[0] - p1[0]
+        return height * width
+
     def add_annotation(self, image):
         results = self.read_image_text(image)
 
-        kannada_count = 0
+        total_area = 0
+        kannada_area = 0
         for result in results:
             rect = result[0]
+            area = self.calc_rect_area(rect)
             text = result[1]
             confidence = result[2]
             language = self._detect_language(text)
@@ -100,12 +109,13 @@ class KannadaChecker:
                 text = self.translator.translate(text)
                 is_translated = True
             if language == "kn":
-                kannada_count += 1
+                kannada_area += area
+            total_area += area
             image = self._draw_box(
                 image, rect, text, confidence, language, is_translated
             )
 
-        percentage = kannada_count / len(results) * 100
+        percentage = kannada_area / total_area * 100
         image = self._add_kannada_progress_bar(image, percentage)
 
         return image
