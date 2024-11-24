@@ -1,4 +1,6 @@
 import { IonPage, IonContent, IonLabel } from "@ionic/react";
+import { usePhotoGallery } from "../hooks/usePhotoGallery";
+import FabMenu from "../components/FabMenu";
 
 const Login: React.FC = () => {
   return (
@@ -36,8 +38,9 @@ const Login: React.FC = () => {
             </div>
             <div className="mt-6">
               <button
-                type="submit"
+                type="button"
                 className="w-full px-4 py-2 bg-indigo-600 text-white rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                onClick={() => (window.location.href = "/dashboard")}
               >
                 Login
               </button>
