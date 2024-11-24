@@ -34,7 +34,15 @@ You will find that few sample images have been provided in the `dataset` folder.
 To compile and test the project on these samples, run the following command:
 
 ```bash
-python main.py
+# python main.py
+```
+
+## Running the API
+
+To run the API, use the following command:
+
+```bash
+flask run --host=0.0.0.0
 ```
 
 You will find the results in the `annotated` folder.
