@@ -34,7 +34,7 @@ You will find that few sample images have been provided in the `dataset` folder.
 To compile and test the project on these samples, run the following command:
 
 ```bash
-# python main.py
+python main.py
 ```
 
 ## Running the API
@@ -45,7 +45,17 @@ To run the API, use the following command:
 flask run --host=0.0.0.0
 ```
 
-You will find the results in the `annotated` folder.
+## Running the Ngrok Server
+
+To expose your local Flask server to the internet, you can use Ngrok. First, download and install Ngrok from [here](https://ngrok.com/download). Then, use the following command to start an Ngrok server:
+
+```bash
+ngrok http http://localhost:5000
+```
+
+This will generate a public URL that you can use to access your Flask server.
+
+You can now use this URL to interact with your API from anywhere.
 
 ## Approach / Workflow
 
