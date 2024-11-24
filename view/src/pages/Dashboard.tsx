@@ -12,6 +12,7 @@ import FabMenu from "../components/FabMenu";
 import { usePhotoGallery } from "../hooks/usePhotoGallery";
 import { useState } from "react";
 import Gallery from "../components/Gallery";
+import instance from "../axios";
 
 const Dashboard: React.FC = () => {
   const { photos, takePhoto } = usePhotoGallery();
