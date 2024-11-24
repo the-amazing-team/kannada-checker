@@ -6,13 +6,10 @@ import {
   IonContent,
   IonToast,
 } from "@ionic/react";
-import ExploreContainer from "../components/ExploreContainer";
-import "./Tab1.css";
 import FabMenu from "../components/FabMenu";
 import { usePhotoGallery } from "../hooks/usePhotoGallery";
 import { useState } from "react";
 import Gallery from "../components/Gallery";
-import instance from "../axios";
 
 const Dashboard: React.FC = () => {
   const { photos, takePhoto } = usePhotoGallery();
